@@ -38,7 +38,7 @@ public class Calculadora {
     public double dividir() {
         if (num2 == 0) {
             JOptionPane.showMessageDialog(null, "No se puede dividir por cero", "Error", JOptionPane.ERROR_MESSAGE);
-            return Double.NaN;  // Retorna NaN (Not a Number) si hay un intento de división por cero
+            return Double.NaN; 
         }
         return num1 / num2;
     }
