@@ -13,32 +13,27 @@ public class Calculadora {
         num2 = 0.0;
     }
 
-    // Método para pedir los datos al usuario
     public void pedir_datos() {
         num1 = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el primer número:"));
         num2 = Double.parseDouble(JOptionPane.showInputDialog("Ingresa el segundo número:"));
     }
 
-    // Método para realizar la suma
     public double sumar() {
         return num1 + num2;
     }
 
-    // Método para realizar la resta
     public double restar() {
         return num1 - num2;
     }
 
-    // Método para realizar la multiplicación
     public double multiplicar() {
         return num1 * num2;
     }
 
-    // Método para realizar la división
     public double dividir() {
         if (num2 == 0) {
             JOptionPane.showMessageDialog(null, "No se puede dividir por cero", "Error", JOptionPane.ERROR_MESSAGE);
-            return Double.NaN; 
+            return Double.NaN;  
         }
         return num1 / num2;
     }
@@ -49,7 +44,7 @@ public class Calculadora {
         resultados += "Suma: " + sumar() + "\n";
         resultados += "Resta: " + restar() + "\n";
         resultados += "Multiplicación: " + multiplicar() + "\n";
-        
+
         double division = dividir();
         if (Double.isNaN(division)) {
             resultados += "División: No válida\n";
