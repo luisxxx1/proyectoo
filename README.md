@@ -64,7 +64,7 @@ PRIVATE: Solo dentro de la misma clase
 PROTECTED : Accesible en la misma clase, paquete y subclases.
 DEFAULT : Solo dentro del mismo paquete sirven para proteger datos y controlar el acceso.
 
-8)	Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+#  8)	Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
 R//
 Una variable de entorno es un valor del sistema usado por programas. En java, son clave para 
 Configurar el entorno (JAVA_HOME)
